@@ -1,7 +1,6 @@
 ﻿Console.WriteLine("Введите число ");
 int a = Convert.ToInt32(Console.ReadLine());
 int count = 1;
-int chet = 0;
 while (a > count)
 {
     if (a%2 == 0)
