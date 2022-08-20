@@ -26,12 +26,9 @@ class Program
     static void Sum (int[] array)
     {
         int sum = 0;
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < array.Length; i= i+2)
         {
-            if (array[i]%2 == 0)
-            {
                 sum = sum + array[i];
-            }
         }
         Console.Write(sum);
     }
