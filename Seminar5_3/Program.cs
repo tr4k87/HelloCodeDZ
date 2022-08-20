@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+using System;
 class Program
 {
     static int[] addArray(int number)
