@@ -32,7 +32,7 @@ class Program
         }
         Console.Write(sum);
     }
-     static void WriteArray(int[] array) // вывод всего массива в троку
+     static void WriteArray(int[] array) 
         {
             for (int i = 0; i < array.Length; i++)
             {
