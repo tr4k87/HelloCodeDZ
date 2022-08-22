@@ -1,15 +1,41 @@
-﻿// Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-int[] number = new int[10];
-Random random = new Random();
-int sum = 0;
-for (int i = 0; i < number.Length; i++)
+﻿// Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве
+using System;
+class Program
 {
-    Console.Write((number[i] = random.Next(100, 999)) + ",");
-
-    if (number[i] % 2 == 0)
+    static int[] AddArray(int number)
     {
-        sum = sum + 1;
+        int[] array = new int[number];
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = new Random().Next(100, 999);
+        }
+        return array;
+    }
+    static void Write(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write(array[i] + ", ");
+        }
+        Console.WriteLine();
+    }
+
+    static void Chet(int[] array)
+    {
+        int sum = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] % 2 == 0)
+            {
+                sum = sum + 1;
+            }
+        }
+        Console.WriteLine(sum);
+    }
+    static void Main(string[] argm)
+    {
+        int[] array = AddArray(10);
+        Write(array);
+        Chet(array);
     }
 }
-Console.WriteLine();
-Console.WriteLine(sum);
