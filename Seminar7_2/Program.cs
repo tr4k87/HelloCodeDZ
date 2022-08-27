@@ -33,7 +33,7 @@ class Program
             {
                 if (array[i,j] == chis)
                 {
-                    Console.WriteLine(chis);
+                    Console.WriteLine(chis); break;
                 }
                 else
                 {
