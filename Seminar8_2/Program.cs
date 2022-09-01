@@ -29,7 +29,7 @@ static void Sum(int[,] array)
         int temp = 0;
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            temp += array[i, j];
+            temp = temp + array[i, j];
         }
         if (temp < sum)
             {
